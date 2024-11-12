@@ -1,0 +1,28 @@
+
+.hero {
+    height: 400px;
+    border-radius: 33px;
+    margin:20px;
+    background-image: url('../assets/gropImg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;  
+    justify-content: center; 
+    align-items: center;  
+  }
+  .hero-section {
+    height: 600px;
+    background-color: #1E1E24;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 1;  
+  }
+  .custom-gap{
+    margin-right:320px
+  }

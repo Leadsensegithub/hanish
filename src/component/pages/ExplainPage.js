@@ -70,7 +70,7 @@ const ExplainPage = () => {
 
         <div>
           <small
-            className="text-end mt-1 d-flex justify-content-center"
+            className="text-end mt-1 d-flex justify-content-end"
             style={{ marginLeft: "510px" }}
           >
             {countWords(explanation)}/50 words

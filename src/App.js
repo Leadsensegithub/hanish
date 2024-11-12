@@ -15,7 +15,7 @@ import EmploymentServey from './component/pages/EmploymentServey';
 import ProgressBar from './component/com/ProgressBar';
 import { useEffect, useState } from 'react';
 import Last from './component/pages/Last (2)';
-import DefaultLayout from './component/com/DefaultLayout';
+import AboutUs from './component/pages/AboutUs';
 
 function App() {
   const location = useLocation();
@@ -48,12 +48,13 @@ function App() {
 
   return (
     <div className="App">
-      <DefaultLayout/>
+
       {startProgress && currentStep !== undefined && (
         <ProgressBar currentStep={currentStep} />
       )}
 
       <Routes>
+      <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="/" element={<LandingPage />} />
         <Route path="/register" element={<StudentRegister />} />
         <Route path="/otp" element={<OTP onNext={handleProgress} />} />

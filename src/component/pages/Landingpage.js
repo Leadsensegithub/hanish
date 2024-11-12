@@ -1,8 +1,8 @@
 import React from 'react';
 import '../css/LandingPage.css'
 import Assets from '../assets/Assets';
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';   
+import DefaultLayout from "../com/DefaultLayout"  
 function LandingPage() {
     const nav = useNavigate()
     function handleButton(){
@@ -16,18 +16,7 @@ function LandingPage() {
                 </div>
                 <div className='row'>
                     <div className='col-lg-12 container'>
-                        {/* <div className='header'>
-                            <div className='header-body'>
-                                <div>
-                                    <img src={Assets?.LSmediaLOGO} alt='Loading...'></img>
-                                </div>
-                                <div className='buttons-info'>
-                                    <button className='btn login'>Login</button>
-                                    <button className='btn register' onClick={handleButton}>Register</button>
-                                    <button className='btn c_register'>Company  Register</button>
-                                </div>
-                            </div>
-                        </div> */}
+                        <DefaultLayout/>
                     </div>
                     <div className='col-lg-12'>
                         <div className='info-body'>
