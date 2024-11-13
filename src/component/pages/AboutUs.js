@@ -2,16 +2,17 @@ import React from "react";
 import "../css/AboutUs.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Assets from "../assets/Assets";
-
+import SliderComponent from "../com/SliderComponent";
+const images =[Assets.GroupImg,Assets.LaptopUse,Assets.passPort]
 function AboutUs() {
   return (
     <div>
-      <header className="hero text-center text-white">
+      {/* <header className="hero text-center text-white">
         <div className=" d-flex justify-content-center align-items-center">
           <h1>About Us</h1>
         </div>
-      </header>
-
+      </header> */}
+      <SliderComponent images={images}/>
       <section className="stats-section text-center my-5">
         <div>
           <div className="row">
@@ -30,7 +31,7 @@ function AboutUs() {
                 className="img-fluid "
               />
             </div>
-            <div className="col-md-4 d-flex flex-column align-items-center pt-5 mt-5">
+            <div className="col-md-4 d-flex flex-column align-items-center mt-5">
               <h1>Creative agency and their best solutions</h1>
               <p>Ultrices gravida dictum fusce ut placerat orci nulla</p>
               <button className="btn btn-primary">Read More</button>
@@ -41,7 +42,7 @@ function AboutUs() {
 
       <section
         className="hero-section text-white py-5"
-        style={{ backgroundColor: "#00004d" }}
+        style={{ backgroundColor: "15A3EF" }}
       >
         <div className="container">
           <div className="row justify-content-center">
@@ -82,7 +83,7 @@ function AboutUs() {
         </div>
       </section>
       <section className="team-section my-5">
-      {/* <iframe
+        {/* <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/qgZsZerFek8?si=ny0vLTr5TkENhiRK"
@@ -107,7 +108,7 @@ function AboutUs() {
             </div>
             <div className="col-md-3 col-sm-6 mb-3">
               <img
-                  src={Assets.passPort}
+                src={Assets.passPort}
                 alt="team member"
                 className="img-fluid "
               />
@@ -115,7 +116,7 @@ function AboutUs() {
             </div>
             <div className="col-md-3 col-sm-6 mb-3">
               <img
-                  src={Assets.passPort}
+                src={Assets.passPort}
                 alt="team member"
                 className="img-fluid"
               />
@@ -123,7 +124,7 @@ function AboutUs() {
             </div>
             <div className="col-md-3 col-sm-6 mb-3">
               <img
-                  src={Assets.passPort}
+                src={Assets.passPort}
                 alt="team member"
                 className="img-fluid"
               />
@@ -141,7 +142,7 @@ function AboutUs() {
             </div>
             <div className="col-md-3 col-sm-6 mb-3">
               <img
-                  src={Assets.passPort}
+                src={Assets.passPort}
                 alt="team member"
                 className="img-fluid "
               />
@@ -149,7 +150,7 @@ function AboutUs() {
             </div>
             <div className="col-md-3 col-sm-6 mb-3">
               <img
-                  src={Assets.passPort}
+                src={Assets.passPort}
                 alt="team member"
                 className="img-fluid"
               />
@@ -157,7 +158,7 @@ function AboutUs() {
             </div>
             <div className="col-md-3 col-sm-6 mb-3">
               <img
-                  src={Assets.passPort}
+                src={Assets.passPort}
                 alt="team member"
                 className="img-fluid"
               />

@@ -1,10 +1,8 @@
-/* eslint-disable jsx-a11y/heading-has-content */
 import React from 'react';
 import '../css/LandingPage.css'
 import Assets from '../assets/Assets';
 import { useNavigate } from 'react-router-dom';
-import DefaultLayout from '../com/DefaultLayout (1)';
-// import DefaultLayout from '../defaultLayout/DefaultLayout';
+import DefaultLayout from '../defaultLayout/DefaultLayout';
  
 
 function LandingPage() {

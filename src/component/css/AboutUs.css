@@ -12,7 +12,7 @@
   }
   .hero-section {
     height: 600px;
-    background-color: #1E1E24;
+    background-color: #B4B9FA;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,6 +23,6 @@
     font-weight: bold;
     z-index: 1;  
   }
-  .custom-gap{
+  /* .custom-gap{
     margin-right:320px
-  }
+  } */
