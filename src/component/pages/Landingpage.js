@@ -4,6 +4,7 @@ import '../css/LandingPage.css'
 import Assets from '../assets/Assets';
 import { useNavigate } from 'react-router-dom';
 import DefaultLayout from '../com/DefaultLayout (1)';
+import SlideButtons from '../com/SlideButtons';
 // import DefaultLayout from '../defaultLayout/DefaultLayout';
  
 
@@ -14,7 +15,7 @@ function LandingPage() {
  const handlebtn =()=>{
     nav("/companyRegister")
  }
-
+const list = [["Java Developer","Technical Lead","Cyber Security"],["Full Stack Developer","Front End Developer","Business Analyst"]]
     return (
         <>
             <div className='landingPage'>
@@ -25,7 +26,6 @@ function LandingPage() {
                 <div className='row'>
                     <div className='col-lg-12'>
                         <div className='header'>
-                             
                         </div>
                     </div>
                     <div className='col-12'>
@@ -150,16 +150,11 @@ function LandingPage() {
 
   <div className='career_btn'>
     <div>
-      <button>Java Developer</button><br />
-      <button>Technical Lead</button><br />
-      <button>Cyber Security</button>
+    <div>
+      <SlideButtons list={list}/>
+  </div>
     </div>
 
-    <div>
-      <button>Full Stack Developer</button><br />
-      <button>Front End Developer</button><br />
-      <button>Business Analyst</button>
-    </div>
   </div>
 </div>
 

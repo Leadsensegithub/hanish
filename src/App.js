@@ -20,6 +20,7 @@ import CompanyRegister from './component/pages/CompanyRegister';
 import CompanyOtp from './component/pages/CompanyOtp';
 import Card from './component/pages/Card';
 import Search from './component/pages/Search';
+import DefaultCard from './component/com/DefaultCard';
 
 function App() {
   const location = useLocation();
@@ -58,6 +59,7 @@ function App() {
       )}
 
       <Routes>
+      <Route path="/defaultcard" element={<DefaultCard/>} />
       <Route path="/companyRegister" element={<CompanyRegister/>} />
       <Route path="/card" element={<Card/>} />
       <Route path="/search" element={<Search/>} />
